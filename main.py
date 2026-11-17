@@ -38,7 +38,13 @@ async def log_requests(request: Request, call_next):
 
 @app.get("/")
 def root():
-    return {"application": "Student API", "framework": "FastAPI", "status": "running"}
+    return {
+        "application": "Student API",
+        "framework": "FastAPI",
+        "status": "running",
+        "sapid": "590012069",
+        "location": "Dehradun",
+    }
 
 
 @app.get("/health")
